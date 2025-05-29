@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Встраиваемый контент</title>
+  <style>
+    .tag {
+      color: navy;
+    }
+    .attribute {
+      color: #e6550d;
+    }
+    iframe {
+      border: 0;
+    }
+  </style>
+</head>
+<body>
+<h1>Встраиваемый контент</h1>
+<p>Один из способов добавления содержимого на страницу — это внедрить другую HTML-страницу в текущую. Это делается с помощью встроенного фрейма или элемента <span class="tag">&lt;iframe&gt;</span>. Данный элемент принимает URL другой HTML-страницы в значении атрибута <span class="attribute">src</span>&nbsp;— это вызывает содержимое из внедрённой HTML-страницы для отображения на текущей странице. Значение атрибута <span class="attribute">src</span> может быть URL относительно страницы, где появляется элемент <span class="tag">&lt;iframe&gt;</span> или абсолютным адресом для исключительно внешней страницы.</p><p>Многие страницы используют элемент <span class="tag">&lt;iframe&gt;</span> для внедрения медиа-контента на страницу с внешнего сайта, вроде Google Maps, YouTube и др.</p>
+
+<h2>Демонстрация добавления встроенного фрейма</h2>
+через поделиться!
+<figure>
+  <iframe src="https://vk.com/video_ext.php?oid=-202869502&id=456239024&hd=2&autoplay=1" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+  <figcaption>Видео физмат</figcaption>
+</figure>
+
+
+
+<h2>Демонстрация карты Яндекс</h2>
+<figure>
+  <iframe
+    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad264f6c5e779a4e8d174a6325149d92101b35b996cf4366b6537787c90096e0b&amp;source=constructor"
+    width="600"
+    height="450"
+    title="Карта города Орёл от Яндекс.Карт"
+  ></iframe>
+  <figcaption>Карта города Орёл от Яндекс.Карт</figcaption>
+</figure>
+
+<h2>Демонстрация добавления на страницу видео</h2>
+<figure>
+  <video width="320" height="240" controls poster="orelu.png">
+    <source src="oreluniver.mp4" type="video/mp4">
+  </video>
+  <figcaption>Видео об ОГУ</figcaption>
+</figure>
+
+<h2>Демонстрация добавления на страницу аудио</h2>
+<figure>
+  <audio controls>
+    <source src="yuriy-gagarin-poehali.mp3" type="audio/mpeg">
+    <source src="yuriy-gagarin-poehali.ogg" type="audio/ogg">
+  </audio>
+  <figcaption>Аудиозапись "Юрий Гагарин - Поехали!"</figcaption>
+</figure>
+
+</body>
+</html>
+
